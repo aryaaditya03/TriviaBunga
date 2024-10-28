@@ -1,0 +1,576 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 9%;
+    background: #191919;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    border-bottom: 2px solid palevioletred;
+
+}
+
+
+body{
+    background: #101010;
+}
+
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: lightgray;
+    text-shadow: 3px 2px 2px gray;
+}
+
+.logo span{
+    color: pink;
+    text-shadow: 3px 2px 2px gray;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;   
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid palevioletred;
+
+}
+
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+.aboutbng{
+    width: 100%;
+    height: auto;
+    background: #101010;
+}
+
+.aboutbng .box{
+    width: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutbng .flower h1{
+    font-size: 60px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px 0;
+    color: whitesmoke;
+    padding-top: 80px;
+    text-shadow: 3px 2px 1px gray;
+}
+
+
+
+.aboutbng .flower h4{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-left: 5px;
+    
+}
+
+.aboutbng .flower h4 span{
+    color: pink;
+}
+
+
+.aboutbng .flower p{
+    text-align: center;
+    margin: 35px 0;
+    color: gray;
+    font-size: 25px;
+}
+
+.aboutbng .flower_box{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 18px;
+}
+
+.aboutbng .flower_box .flower_card{
+    background: lightpink;
+    width: 300px;
+    padding: 25px 30px;
+    text-align: center;
+    border-radius: 13px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.aboutbng .flower_box .flower_card:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+
+.aboutbng .flower .flower_box img{
+    width: 200px;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.6));
+    transition: 0.3s;
+}
+
+.aboutbng .flower .flower_box img:hover{
+    transform: scale(1.1);
+}
+
+.aboutbng .flower_box .flower_card h2{
+    font-size: 25px;
+    color: palevioletred;
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+.aboutbng .flower_box .flower_card .textbunga{
+    color: #e91e63;
+    margin: 25px 0;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px white;
+}
+
+.aboutbng .flower_box .flower_card .btn{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 10px;
+    background: #e91e63;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.aboutbng .flower_box .flower_card .btn:hover{
+    background: transparent;
+    border: 1px solid #191919;
+    transform: translateX(8px);
+}
+
+.buttonbng{
+    background: #101010;
+}
+
+.bungabtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+}
+.buttonbng .pagination{
+    background: #101010;
+    
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    padding: 10px 30px;
+    background: #e91e63;
+    margin: 0 3px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.buttonbng .pagination:hover{
+    background: transparent;
+    border: 1px solid pink;
+    transform: translateX(8px);
+}
+
+
+footer{
+    background-color: #101010;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 10px 0;
+    border-top: 2px solid palevioletred;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.listfooter{
+    background: #101010;
+}
+
+.listfooter{
+    margin-top: 0;
+    list-style: none;
+    padding-bottom: 5px;
+    font-size: 18px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.listfooter a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.listfooter li a{
+    padding: 0 12px;
+
+}
+
+
+.footerBottom{
+    font-size: 10px;
+    text-align: center;
+
+}
+
+.footerBottom p{
+    color: white;
+
+}
+
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+
+    }
+
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .iconscontact p{
+        font-size: 0.9rem;
+    }
+
+    .scroll-down{
+        right: 3%;
+        transition: .2s;
+    }
+
+    .aboutbng .flower h4{
+        top: 14%;
+    }
+
+    
+
+
+}
+
+@media (max-width: 1460px){
+    .bunga{
+        padding: 0 12%;
+        transition: .2s;
+
+    }
+    
+    .aboutbng .flower h4{
+        top: 14%;
+    }
+
+}
+
+@media (max-width: 1380px){
+    .aboutbng .flower h4{
+        top: 20%;
+        right: 40%;
+    }
+}
+
+
+
+
+@media (max-width: 1340px){
+    .bunga-img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .bunga-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+
+    .bunga-text h5{
+        margin-bottom: 25px;
+    }
+
+    .aboutbng .flower h4{
+        top: 20%;
+    }
+}
+
+@media (max-width: 1269px){
+}
+
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;    
+    }
+
+    .bunga-text{
+        padding-top: 115px;
+    }
+
+    .bunga-img{
+        text-align: center;
+    }
+
+    .bunga-img img{
+        width: 560px;
+        height: auto;
+    }
+
+    .bungaimg{
+        padding-right: 15%;
+
+        opacity: 0.70;
+    }
+
+    .bunga{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .scroll-down{
+        display: none;
+    }
+
+
+    
+}
+
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 90px;
+        padding-right: 16%;
+        transition: all .55s ease;
+        background: #111;
+        opacity: 0.9;
+    }
+
+    .navlist a{
+        margin-left: 0;
+        color: white;
+        font-size: 50px;
+        display: block;
+        margin: 7px 0;
+
+        transition: color .4s;
+    }
+
+    .navlist a:hover{
+        color: pink;
+    }
+
+    .navlist.open{
+        right: 0;
+    }
+
+    .bunga-img{
+        padding-left: 15%;
+        padding-top: 4%;
+    }
+
+    .about img{
+        display: none;
+    }
+
+    
+
+    .contactus{
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    .aboutbng .flower_box{
+        grid-template-columns: 1fr 1fr ;
+        
+    }
+
+
+    .aboutbng{
+        width: 100%;
+    }
+
+    .aboutbng .flower h4{
+        right: 38%;
+    }
+
+}
+
+
+@media (max-width: 640px){
+    .bunga-img img{
+        width: 100%;
+        height: auto;
+        opacity: 0.50;
+    }
+
+    .aboutbng .flower_box .flower_card{
+        width: 330px;
+    
+    }
+    
+    .aboutbng .flower_box{
+        grid-template-columns: 2fr;
+        grid-gap: 15px;
+    
+    }
+
+    .aboutbng .box{
+        padding-left: 1%;
+    }
+
+
+    .aboutbng .flower h1{
+        font-size: 38px;
+    }
+
+    .aboutbng .flower h4{
+        font-size: 16px;
+    
+    }
+
+    .bungabtn{
+        padding-bottom: 6%;
+        padding-left: 2%;
+        
+    }
+    .aboutbng .flower h4{
+        padding-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 370px){
+    .aboutbng .flower h1{
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width: 352px){
+    .aboutbng .flower_box .flower_card{
+        width: 250px;
+    
+    }
+
+    .aboutbng .flower h1{
+        font-size: 30px;
+    }
+
+    .aboutbng .flower h4{
+        font-size: 14px;
+
+    }
+
+
+}
+
+@media (max-width: 365px){
+    .listfooter{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px){
+    .listfooter{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 300px){
+
+    .listfooter{
+        font-size: 12px;
+    }
+
+    .logo{
+        font-size: 25px;
+    }
+
+    #menu-icon{
+        font-size: 25px;
+    }
+
+    .navlist a{
+        margin-right: 35px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .bungabtn{
+        padding-bottom: 6%;
+        padding-left: 2%;
+        
+    }
+
+    .aboutbng .flower h4{
+        padding-bottom: 30px;
+        
+    }
+
+    .aboutbng .box{
+        padding-bottom: 30px;
+    }
+    
+
+}

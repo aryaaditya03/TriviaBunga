@@ -1,0 +1,732 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 9%;
+    background: #191919;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    border-bottom: 2px solid palevioletred;
+
+}
+
+
+body{
+    background: #101010;
+}
+
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: lightgray;
+    text-decoration: underline;
+}
+
+.logo span{
+    color: pink;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;   
+    text-decoration: none;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid palevioletred;
+
+}
+
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.bunga{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: #101010;
+    position: relative;
+    padding: 0 19%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    
+}
+
+.bunga-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.bunga-text h1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 1;
+    color: lightpink;
+    margin: 0 0 45px;
+    transition: all .55s ease;
+}
+
+.bunga-text h1:hover{
+    color: #f9004d;
+    transform: translateX(10px);
+
+}
+
+.bunga-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: lightgray;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.bunga-text h4 span{
+    color: pink;
+}
+
+
+.bunga-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.bunga-img img{
+    width: 450px;
+    height: auto;
+    transition: all .55s ease;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+
+}
+
+.bunga-img{
+    padding-left: 18%;
+    padding-top: 5%;
+}
+
+.bunga-img img:hover{
+    transform: translate(18px, 20px);
+}
+
+.bunga-text a{
+    display: inline-block;
+    color: white;
+    background: palevioletred;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    text-decoration: none;
+}
+
+.bunga-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.contents{
+    width: 60%;
+    max-width: 100%;
+    margin: auto;
+    background: #191919;
+    padding-top: 80px;
+    border: 2px solid pink;
+    border-bottom: none;
+    box-shadow: 0 0 30px rgba(0,0,0,0.9);
+
+    
+}
+
+
+.article h1{
+    font-size: 50px;
+    text-align: center;
+    padding-left: 1px;
+    color: white;
+    font-weight: 600;
+    text-shadow: 3px 2px 1px gray;
+}
+
+.article h2{
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    color: wheat;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    font-style: italic;
+    padding-bottom: 2px;
+    padding-right: 2px;
+}
+
+.articleimg{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    border: 3px solid lightgray;
+    margin-bottom: 15px;
+}
+
+.article-img{
+    padding-left: 16%;
+    padding-bottom: 5px;
+}
+
+.article p{
+    padding: 20px;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+    color: white;
+}
+
+.article hr{
+    height: 4px;
+    background: lightgray;
+    opacity: 0.6;
+    border-radius: 6px;
+    margin: 15px 130px;
+}
+
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+    text-decoration: none;
+}
+
+
+.icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+    text-decoration: none;
+}
+
+.icons i:hover{
+    color: #e91e63;
+    transform: translateY(-5px);
+    text-decoration: none;
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #e91e63;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+
+footer{
+    background-color: #101010;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 10px 0;
+    border-top: 2px solid palevioletred;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.listfooter{
+    background: #101010;
+}
+
+.listfooter{
+    margin-top: 0;
+    list-style: none;
+    padding-bottom: 5px;
+    font-size: 18px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.listfooter a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.listfooter li a{
+    padding: 0 12px;
+
+}
+
+
+.footerBottom{
+    background: #101010;
+    font-size: 10px;
+    text-align: center;
+
+}
+
+.footerBottom p{
+    color: white;
+
+}
+
+
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+
+    }
+
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .iconscontact p{
+        font-size: 0.9rem;
+    }
+
+    .scroll-down{
+        right: 3%;
+        transition: .2s;
+    }
+
+    .aboutbng .Clothes h4{
+        top: 14%;
+    }
+
+    
+
+
+}
+
+@media (max-width: 1460px){
+    .bunga{
+        padding: 0 12%;
+        transition: .2s;
+
+    }
+
+    .aboutbng .Clothes h4{
+        top: 14%;
+    }
+
+}
+
+@media (max-width: 1380px){
+    .aboutbng .Clothes h4{
+        top: 20%;
+        right: 40%;
+    }
+}
+
+@media (max-width: 1445px){
+    .iconscontact i{
+        font-size: 105px;
+    }
+
+    .iconscontact h1{
+        font-size: 68px;
+    }
+}
+
+@media (max-width: 1417px){
+    .iconscontact h1{
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 1409px){
+    .iconscontact p{
+        font-size: 0.85rem;
+        
+    }
+}
+
+@media (max-width: 1353px){
+    .iconscontact i{
+        font-size: 100px;
+        padding-left: 2px;
+    }
+}
+
+@media (max-width: 1337px){
+    .iconscontact h1{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1289px){
+    .iconscontact p{
+        font-size: 0.7rem;
+        
+    }
+}
+
+@media (max-width: 1289px){
+    .iconscontact i{
+        font-size: 90px;
+        padding-left: 2px;
+    }
+
+    .iconscontact h1{
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 1250px){
+    .iconscontact h1{
+        font-size: 55px;
+    }
+
+}
+
+@media (max-width: 1178px){
+    .iconscontact i{
+        font-size: 85px;
+        padding-left: 3px;
+    }
+}
+
+@media (max-width: 1173px){
+    .iconscontact p{
+        font-size: 0.6rem;
+    }
+    .iconscontact h1{
+        font-size: 50px;
+    }
+    
+    .iconscontact i{
+        font-size: 80px;
+        padding-left: 3px;
+    }
+}
+
+@media (max-width: 1091px){
+
+    .iconscontact i{
+        font-size: 73px;
+        padding-left: 3px;
+    }
+
+    .iconscontact h1{
+        font-size: 45px;
+    }
+
+    .iconscontact p{
+        font-size: 0.55rem;
+    }
+}
+
+@media (max-width: 1043px){
+    .iconscontact i{
+        font-size: 60px;
+        padding-left: 3px;
+    }
+
+    .iconscontact h1{
+        font-size: 40px;
+    }
+}
+
+
+
+@media (max-width: 1340px){
+    .bunga-img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .bunga-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+
+    .bunga-text h5{
+        margin-bottom: 25px;
+    }
+
+    .aboutbng .Clothes h4{
+        top: 20%;
+    }
+}
+
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;    
+    }
+
+    .bunga-text{
+        padding-top: 115px;
+    }
+
+    .bunga-img{
+        text-align: center;
+    }
+
+    .bunga-img img{
+        width: 560px;
+        height: auto;
+    }
+
+    .bungaimg{
+        padding-right: 15%;
+
+        opacity: 0.70;
+    }
+
+    .bunga{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .scroll-down{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 90px;
+        padding-right: 16%;
+        transition: all .55s ease;
+        background: #111;
+        opacity: 0.9;
+    }
+
+    .navlist a{
+        margin-left: 0;
+        color: white;
+        font-size: 50px;
+        display: block;
+        margin: 7px 0;
+        transition: color .4s;
+
+    }
+
+    .navlist a:hover{
+        color: pink;
+    }
+
+    .navlist.open{
+        right: 0;
+    }
+
+    .bunga-img{
+        padding-left: 15%;
+        padding-top: 4%;
+    }
+
+    .contents{
+        width: 85%;
+    }
+
+    .about img{
+        display: none;
+    }
+
+    
+
+    .contactus{
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    .aboutbng .clothes_box{
+        grid-template-columns: 1fr 1fr  ;
+        grid-gap: 30px;
+        
+    }
+
+
+    .aboutbng{
+        width: 100%;
+    }
+
+    .aboutbng .Clothes h4{
+        right: 38%;
+    }
+
+}
+    
+
+@media (max-width: 790px){
+    .article h1{
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 859px){
+    .bunga-img{
+        padding-left: 3%;
+        padding-top: 4%;
+    }
+}
+
+@media (max-width: 680px){
+    .bunga-img img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .aboutbng .clothes_box{
+        grid-template-columns: 0.7fr;
+        grid-gap: 15px;
+    
+    }
+
+    .article h1{
+        font-size: 35px;
+    }
+
+        
+}
+
+@media (max-width: 391px){
+    .contents{
+        width: 90%;
+    }
+    .bunga-text a{
+        display: block;
+        text-align: center;
+    }
+    .bunga-text a:hover{
+        background: transparent;
+        border: 1px solid white;
+        transform: translateX(8px);
+    }
+
+    .navlist a{
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 590px){
+    .contents{
+        width: 90%;
+    }
+}
+
+@media (max-width: 365px){
+    .listfooter{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 321px){
+    .listfooter{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 254px){
+
+    .bunga{
+        width: 200%;
+        height: 100vh;
+        min-height: 200%;
+
+    }
+}
+
+@media (max-width: 300px){
+
+    .bunga-text h1{
+        font-size: 65px;
+    } 
+    .listfooter{
+        font-size: 12px;
+    }
+
+    .logo{
+        font-size: 25px;
+    }
+
+    #menu-icon{
+        font-size: 25px;
+    }
+
+    .navlist a{
+        margin-right: 35px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .bunga-img{
+        padding-left: 25px;
+    }
+
+}

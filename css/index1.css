@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    padding: 40px 15%;
+
+}
+.index1{
+    background: #101010;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-gap: 6rem;
+    border: 2px solid palevioletred;
+
+}
+
+
+
+.awal{
+    font-size:70px;
+    color: #fff;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-shadow: 3px 2px 1px gray;
+
+}
+
+
+.awal span{
+    color: palevioletred;
+}
+
+
+.contact-form1 p{
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: pink;
+    text-shadow: 3px 2px 1px gray;
+
+}
+
+
+.contact-form1 form{
+    position: relative;
+    padding-left: 25%;
+}
+
+.contact-form1 form input{
+    width: 45%;
+    padding: 16px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.contact-form1 form .btn{
+    display: inline-block;
+    background: #f9004d;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 170px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+
+.contact-form1 form .btn:hover{
+    border: 2px solid #f9004d;
+    background: transparent;
+    transform: scale(1.1);
+
+}
+
+.button a{
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    padding: 10px 30px;
+    background: #e91e63;
+    margin: 0 2px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    text-decoration: none;
+}
+
+.button a:hover{
+    background: transparent;
+    border: 1px solid #191919;
+    transform: translateX(8px);
+}
+
+
+.button{
+    position: absolute;
+    bottom: 8%;
+    right: 4%;
+}
+
+@media (max-width: 1121px){
+    .contact-form1 form input{
+        width: 55%;
+    }
+
+    .contact-form1 form{
+        position: relative;
+        padding-left: 15%;
+    }
+}
+
+@media (max-width: 950px){
+    .awal{
+        font-size:65px;
+    }
+    .contact-form1 p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 950px){
+    .contact-form h1{
+        font-size: 110px;
+    }
+}
+
+@media (max-width: 885px){
+    .awal{
+        font-size:60px;
+    }
+
+    .contact-form1 form input{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contact-form1 form .btn{
+        width: 200px;
+    }
+
+    .contact-form1 form{
+        position: relative;
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 808px){
+    .awal{
+        font-size:55px;
+    }
+
+    .contact-form1 form input{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contact-form1 form .btn{
+        width: 200px;
+    }
+
+    .contact-form1 form{
+        position: relative;
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 741px){
+    .awal{
+        font-size:50px;
+    }
+
+    .contact-form1 form input{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contact-form1 form .btn{
+        width: 200px;
+    }
+
+    .contact-form1 form{
+        position: relative;
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 687px){
+    .awal{
+        font-size:45px;
+    }
+
+
+    .contact-form1 form input{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contact-form1 form .btn{
+        width: 200px;
+        font-size: 0.9rem;
+    }
+
+    .contact-form1 form{
+        position: relative;
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 620px){
+    .awal{
+        font-size:40px;
+    }
+    .contact-form1 form input{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contact-form1 form .btn{
+        width: 200px;
+    }
+
+    .contact-form1 form{
+        position: relative;
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 555px){
+    .contact-form1 form input{
+        width: 50%;
+        font-size: 0.6rem;
+    }
+
+    .contact-form1 form .btn{
+        width: 120px;
+        font-size: 0.5rem;
+    }
+
+    .awal{
+        font-size:30px;
+    }
+
+    .contact-form1 p{
+        font-size: 13px;
+    }
+
+    .contact-form1 form{
+        position: relative;
+        padding-left: 12%;
+    }
+}
+
+@media (max-width: 444px){
+    .contact-form1 form input{
+        width: 90%;
+        font-size: 0.7rem;
+    }
+
+    .contact-form1 form .btn{
+        width: 230px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 406px){
+    .awal{
+        font-size:25px;
+    }
+
+    .contact-form1 p{
+        font-size: 12px;
+    }
+
+    .contact-form1 form .btn{
+        width: 110px;
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 391px){
+    .contact-form1 form .btn{
+        display: block;
+    }
+
+}
+
+
+
+
+@media (max-width: 305px){
+    .awal{
+        font-size:19px;
+        padding-right: 50px;
+    }
+
+    .contact-form1 p{
+        font-size: 11px;
+        padding-right: 50px;
+    }
+
+    .contact-form1 form{
+        position: relative;
+        padding-left: 5%;
+    }
+
+    .contact-form1 form input{
+        width: 74%;
+        font-size: 0.6rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .contact-form1 form .btn{
+        width: 165px;
+        font-size: 0.6rem;
+    }
+
+}
+

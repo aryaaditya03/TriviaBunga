@@ -1,0 +1,778 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 9%;
+    background: #191919;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    border-bottom: 2px solid palevioletred;
+
+}
+
+body{
+    background: #101010;
+}
+
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: lightgray;
+    text-shadow: 3px 2px 2px gray;
+}
+
+.logo span{
+    color: pink;
+    text-shadow: 3px 2px 2px gray;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;   
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid palevioletred;
+
+}
+
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.contactus{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+    padding-left: 19%;
+    padding-right: 19%;
+    padding-top: 5%;
+    background: #101010;
+}
+
+
+
+
+.contact-img img{
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    transition: all .55s ease;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.6));
+}
+
+.contact-img img:hover{
+    transform: translate(10px,10px);
+}
+
+.iconscontact h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    padding-left: 20px;
+    color: lightgray;
+    margin-bottom: 20px;
+
+}
+
+
+.iconscontact h1 span{
+    color: lightpink;
+}
+
+.iconscontact p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #c6c9d8bf;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1rem;
+    margin-bottom: 3.4rem;
+    padding-left: 10px;
+}
+
+
+
+.iconscontact i{
+    display: inline-block;
+    font-size: 120px;
+    color: pink;
+    transition: all .55s ease;
+}
+
+.contct{
+    padding-left: 32px;
+}
+
+.iconscontact i:hover{
+    color: #e91e63;
+    transform: translateX(10px);
+}
+
+footer{
+    background-color: #101010;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 10px 0;
+    border-top: 2px solid palevioletred;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.listfooter{
+    background: #101010;
+}
+
+.listfooter{
+    margin-top: 0;
+    list-style: none;
+    padding-bottom: 5px;
+    font-size: 18px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.listfooter a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.listfooter li a{
+    padding: 0 12px;
+
+}
+
+
+.footerBottom{
+    font-size: 10px;
+    text-align: center;
+
+}
+
+.footerBottom p{
+    color: white;
+
+}
+
+@media (max-width: 2157px){
+    .iconscontact h1{
+        font-size: 100px;
+    }
+
+    .iconscontact p{
+        font-size: 1.4rem;
+    }
+
+    .iconscontact i{
+        font-size: 170px;
+    }
+}
+
+@media (max-width: 1997px){
+    .iconscontact h1{
+        font-size: 95px;
+    }
+
+    .iconscontact p{
+        font-size: 1.3rem;
+    }
+
+    .iconscontact i{
+        font-size: 165px;
+    }
+}
+
+@media (max-width: 1885px){
+    .iconscontact h1{
+        font-size: 85px;
+    }
+
+    .iconscontact p{
+        font-size: 1.2rem;
+    }
+
+    .iconscontact i{
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 1761px){
+    .iconscontact h1{
+        font-size: 80px;
+    }
+
+    .iconscontact p{
+        font-size: 1.1rem;
+    }
+
+    .iconscontact i{
+        font-size: 140px;
+    }
+}
+
+@media (max-width: 1761px){
+    .iconscontact h1{
+        font-size: 70px;
+    }
+
+    .iconscontact p{
+        font-size: 1rem;
+    }
+
+    .iconscontact i{
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+
+    }
+
+    .iconscontact p{
+        font-size: 0.9rem;
+    }
+
+    .scroll-down{
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1445px){
+    .iconscontact i{
+        font-size: 105px;
+    }
+
+    .iconscontact h1{
+        font-size: 68px;
+    }
+}
+
+@media (max-width: 1417px){
+    .iconscontact h1{
+        font-size: 63px;
+    }
+}
+
+@media (max-width: 1409px){
+    .iconscontact p{
+        font-size: 0.8rem;
+        
+    }
+}
+
+@media (max-width: 1357px){
+    .iconscontact i{
+        font-size: 100px;
+        padding-left: 2px;
+    }
+
+    .iconscontact p{
+        font-size: 0.82rem;
+        
+    }
+}
+
+@media (max-width: 1337px){
+    .iconscontact h1{
+        font-size: 60px;
+    }
+
+    .iconscontact p{
+        font-size: 0.81rem;
+        
+    }
+}
+
+@media (max-width: 1302px){
+    .iconscontact p{
+        font-size: 0.79rem;
+        
+    }
+
+}
+
+@media (max-width: 1289px){
+    .iconscontact p{
+        font-size: 0.78rem;
+        
+    }
+}
+
+@media (max-width: 1289px){
+    .iconscontact i{
+        font-size: 90px;
+        padding-left: 2px;
+    }
+
+    .iconscontact h1{
+        font-size: 55px;
+    }
+
+    .iconscontact p{
+        font-size: 0.76rem;
+        
+    }
+}
+
+@media (max-width: 1254px){
+    .iconscontact h1{
+        font-size: 55px;
+    }
+
+    .iconscontact p{
+        font-size: 0.74rem;
+        
+    }
+
+}
+
+@media (max-width: 1254px){
+    .iconscontact p{
+        font-size: 0.72rem;
+        
+    }
+    
+}
+
+@media (max-width: 1206px){
+    .iconscontact p{
+        font-size: 0.70rem;
+        
+    }
+    
+}
+
+@media (max-width: 1182px){
+    .iconscontact p{
+        font-size: 0.68rem;
+        
+    }
+    
+}
+@media (max-width: 1179px){
+    .iconscontact i{
+        font-size: 85px;
+        padding-left: 3px;
+    }
+
+    .iconscontact p{
+        font-size: 0.66rem;
+        
+    }
+}
+
+@media (max-width: 1173px){
+    .iconscontact p{
+        font-size: 0.64rem;
+    }
+    .iconscontact h1{
+        font-size: 50px;
+    }
+    
+    .iconscontact i{
+        font-size: 80px;
+        padding-left: 3px;
+    }
+
+}
+
+@media (max-width: 1111px){
+    .iconscontact p{
+        font-size: 0.63rem;
+    }
+
+    .contact-img img{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px){
+    .iconscontact p{
+        font-size: 0.62rem;
+    }
+}
+
+@media (max-width: 1091px){
+
+    .iconscontact i{
+        font-size: 76px;
+        padding-left: 3px;
+    }
+
+    .contact-img img{
+        width: 100%;
+    }
+
+    .iconscontact h1{
+        font-size: 49px;
+    }
+
+    .iconscontact p{
+        font-size: 0.61rem;
+    }
+
+}
+
+@media (max-width: 1076px){
+    .iconscontact h1{
+        font-size: 47px;
+    }
+
+    .iconscontact p{
+        font-size: 0.60rem;
+    }
+}
+
+@media (max-width: 1076px){
+    .iconscontact p{
+        font-size: 0.58rem;
+    
+    }
+}
+@media (max-width: 1049px){
+    .iconscontact i{
+        font-size: 70px;
+        padding-left: 3px;
+    }
+
+    .iconscontact h1{
+        font-size: 45px;
+    }
+
+    .iconscontact p{
+        font-size: 0.56rem;
+    
+    }
+}
+
+@media (max-width: 1014px){
+    .iconscontact p{
+        font-size: 0.53rem;
+    
+    }
+
+    .iconscontact i{
+        font-size: 68px;
+    }
+
+
+}
+
+
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 90px;
+        padding-right: 16%;
+        transition: all .55s ease;
+        background: #111;
+        opacity: 0.9;
+    }
+
+    .navlist a{
+        margin-left: 0;
+        color: white;
+        font-size: 50px;
+        display: block;
+        margin: 7px 0;
+
+        transition: color .4s;
+    }
+
+    .navlist a:hover{
+        color: pink;
+    }
+
+    .navlist.open{
+        right: 0;
+    }
+
+    .contactus{
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+
+    .iconscontact h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 5px;
+    }
+
+
+    .iconscontact p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .iconscontact i{
+        font-size: 80px;
+        
+    }
+
+    .contct{
+        margin-left: 25%;
+    }
+
+
+    .contact-img{
+        display: none;
+    }
+
+    
+
+}
+
+@media (max-width: 922px){
+    .contct{
+        margin-left: 23%;
+    }
+}
+
+@media (max-width: 879px){
+    .contct{
+        margin-left: 21%;
+    }
+
+}
+
+@media (max-width: 790px){
+    .contct{
+        margin-left: 19%;
+    }
+
+}
+
+@media (max-width: 706px){
+    .contct{
+        margin-left: 17%;
+    }
+
+    .iconscontact p{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 677px){
+    .contct{
+        margin-left: 13%;
+    }
+
+    .iconscontact p{
+        font-size: 0.85rem;
+    }
+
+}
+
+@media (max-width: 613px){
+    .contct{
+        margin-left: 8%;
+    }
+
+    .iconscontact p{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 573px){
+    .contct{
+        margin-left: 6%;
+    }
+
+    .iconscontact p{
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 513px){
+    .contct{
+        margin-left: 4%;
+    }
+
+    .iconscontact h1{
+        margin-bottom: 5px;
+    }
+
+    .iconscontact p{
+        font-size: 0.6rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (max-width: 391px){
+    
+    .navlist a{
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 392px){
+    .contct{
+        margin-left: 4%;
+    }
+
+    .iconscontact h1{
+        font-size: 45px;
+    }
+
+    .iconscontact p{
+        font-size: 0.68rem;
+        font-weight: 600;
+    }
+
+}
+
+@media (max-width: 360px){
+    .contct{
+        margin-left: 4%;
+    }
+
+    .iconscontact h1{
+        font-size: 40px;
+    }
+
+    .iconscontact p{
+        font-size: 0.66rem;
+        font-weight: 600;
+    }
+
+    .iconscontact i{
+        font-size: 70px;
+    }
+
+}
+
+@media (max-width: 486px){
+    .contct{
+        margin-left: 4%;
+    }
+
+    .iconscontact h1{
+        font-size: 50px;
+    }
+
+    .iconscontact p{
+        font-size: 0.68rem;
+        font-weight: 600;
+    }
+
+}
+
+@media (max-width: 374px){
+
+    .iconscontact h1{
+        font-size: 40px;
+    }
+
+    .iconscontact i{
+        font-size: 60px;
+    }
+
+    .iconscontact p{
+        font-size: 0.5rem;
+
+    }
+
+
+}
+
+@media (max-width: 365px){
+    .listfooter{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 321px){
+    .listfooter{
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 300px){
+
+    .listfooter{
+        font-size: 12px;
+    }
+
+    .logo{
+        font-size: 25px;
+    }
+
+    #menu-icon{
+        font-size: 25px;
+    }
+
+    .navlist a{
+        margin-right: 35px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .contct{
+        margin-left: 1%;
+    }
+
+    .iconscontact h1{
+        padding-left: 10px;
+    }
+}

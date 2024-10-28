@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    padding: 40px 15%;
+
+}
+.index{
+    background: #101010;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-gap: 6rem;
+    border: 2px solid palevioletred;
+
+}
+
+.akhir{
+    font-size: 120px;
+    color: #fff;
+    padding-left: 10%;
+    text-shadow: 3px 2px 1px gray;
+
+}
+
+.akhir span{
+    color: palevioletred;
+}
+
+
+.index-2 p{
+    color: pink;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 15%;
+    text-shadow: 2px 2px 1px gray;
+    padding-bottom: 8%;
+}
+
+
+.button a{
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    padding: 10px 30px;
+    background: #e91e63;
+    margin: 0 2px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    text-decoration: none;
+}
+
+.button a:hover{
+    background: transparent;
+    border: 1px solid #191919;
+    transform: translateX(8px);
+}
+
+
+.button{
+    position: absolute;
+    bottom: 8%;
+    right: 4%;
+}
+
+@media (max-width: 1336px){
+    .akhir{
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 1113px){
+    .akhir{
+        font-size: 80px;
+    }
+
+    .index-2 p{
+        color: pink;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 893px){
+    .akhir{
+        font-size: 70px;
+    }
+
+    .index-2 p{
+        color: pink;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 893px){
+    .akhir{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 669px){
+    .akhir{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 560px){
+    .akhir{
+        font-size: 40px;
+    }
+
+    .index-2 p{
+        color: pink;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 448px){
+    .akhir{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 338px){
+    .akhir{
+        font-size: 25px;
+    }
+
+    .index-2 p{
+        color: pink;
+        font-size: 15px;
+    }
+}
